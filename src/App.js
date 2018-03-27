@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Router, Route, Redirect, Switch } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import createHistory from 'history/createBrowserHistory';
-import comingSoon from 'containers/comingSoon';
+import homeContainer from 'containers/homeContainer';
+import blackout from 'containers/blackout';
 import { gaId } from 'config';
 
 ReactGA.initialize(gaId); // initialize google analytics
@@ -28,8 +29,11 @@ class App extends Component {
     return (
       <Router history={history}>
         <Switch>
-          <Route exact path="/coming-soon" component={comingSoon} />
-          <Redirect to="/coming-soon" />
+          <Route exact path="/" component={homeContainer} />
+          <Route exact path="/home" component={homeContainer} />
+          <Route exact path="/coming-soon" component={homeContainer} />
+          <Route exact path="/blackout" component={blackout} />
+          <Redirect to="/" />
         </Switch>
       </Router>
     );

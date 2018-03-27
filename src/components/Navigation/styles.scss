@@ -1,5 +1,34 @@
-.navLinks{
-  width: 40px;
-  height: 40px;
-  border: 1px solid #FFFFFF;
+// .navLinks{
+//   width: 40px;
+//   height: 40px;
+//   border: 1px solid #FFFFFF;
+// }
+
+.navList{
+  flex-grow: 1;
+  min-width: 200px;
+  width: 25%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.navEntry{
+  color: white;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.linkRow{
+  padding-left: 15px;
+  height: 35px;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  &:last-of-type {
+    border-bottom: 1px solid white;
+  }
 }
