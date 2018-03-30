@@ -21,15 +21,15 @@ body {
 
 h1 {
     font-size: 44px;
-    font-weight: 100;
+    font-weight: 800;
     margin: 0px;
-    // text-transform: uppercase;
+    text-transform: uppercase;
     color: $white;
     letter-spacing: 5px;
   // }
   @include breakpoint(mobile){
     font-size: 44px;
-    font-weight: 100;
+    font-weight: 800;
     margin: 0px;
     color: $white;
     letter-spacing: 5px;

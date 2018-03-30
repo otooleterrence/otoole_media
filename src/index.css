@@ -18,14 +18,15 @@ body {
 
 h1 {
   font-size: 44px;
-  font-weight: 100;
+  font-weight: 800;
   margin: 0px;
+  text-transform: uppercase;
   color: #FFFFFF;
   letter-spacing: 5px; }
   @media (min-width: 450px) {
     h1 {
       font-size: 44px;
-      font-weight: 100;
+      font-weight: 800;
       margin: 0px;
       color: #FFFFFF;
       letter-spacing: 5px; } }

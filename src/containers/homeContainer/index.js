@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import Header from 'components/Header';
 import Navigation from 'components/Navigation';
 import Content from 'components/Content';
 import './styles.css';
@@ -31,11 +30,8 @@ class homeContainer extends Component {
             { property: 'og:site_name', content: 'otoole media' },
           ]}
         />
-        <Header />
-        <div className='content'>
-          <Navigation />
-          <Content />
-        </div>
+        <Navigation />
+        <Content />
       </main>
     );
   }
