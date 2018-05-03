@@ -4,6 +4,7 @@ import ReactGA from 'react-ga';
 import createHistory from 'history/createBrowserHistory';
 import homeContainer from 'containers/homeContainer';
 import blackout from 'containers/blackout';
+import lanterns from 'containers/lanterns';
 import { gaId } from 'config';
 
 ReactGA.initialize(gaId); // initialize google analytics
@@ -33,6 +34,7 @@ class App extends Component {
           <Route exact path="/home" component={homeContainer} />
           <Route exact path="/coming-soon" component={homeContainer} />
           <Route exact path="/blackout" component={blackout} />
+          <Route exact path="/lanterns" component={lanterns} />
           <Redirect to="/" />
         </Switch>
       </Router>

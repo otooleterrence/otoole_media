@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import Header from 'components/Header';
-import Blkout from 'wrongles/Blkout';
+import MenuIcon from 'components/MenuIcon';
+// import Lanterns from 'wrongles/Lanterns';
 import './styles.css';
 
 class homeContainer extends Component {
@@ -9,9 +9,9 @@ class homeContainer extends Component {
   render() {
 
     return (
-      <main className='mainContainer'>
+      <main className="iframeContainer">
         <Helmet
-          title="black out"
+          title="lanterns"
           meta={[
             { name: 'author', content: 'Terry' },
 
@@ -24,14 +24,15 @@ class homeContainer extends Component {
             { property: 'og:title', content: 'otoole_media' },
             { property: 'og:site_name', content: 'otoole.media' },
             { property: 'og:type', content: 'website' },
-            { property: 'og:url', content: 'http://www.otoole.media/coming-soon/' },
+            { property: 'og:url', content: 'http://www.otoole.media/lanterns/' },
             { property: 'og:description', content: 'otoole.media' },
             { property: 'og:image', content: 'http://www.otoole.media/images/preview.png' },
             { property: 'og:site_name', content: 'otoole media' },
           ]}
         />
-        <Header />
-        <Blkout />
+        <MenuIcon />
+        {/* <iframe src="http://localhost:8080/" title="lanterns iframe" /> */}
+        <iframe src="http://wrongles.otoole.media/lanterns.html" title="lanterns iframe" />
       </main>
     );
   }
