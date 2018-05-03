@@ -18,15 +18,15 @@ class homeContainer extends Component {
             { name: 'twitter:card', content: 'summary' },
             { name: 'twitter:site', content: 'otoole.media' },
             { name: 'twitter:creator', content: '@pterryodactyl' },
-            { name: 'twitter:title', content: 'otoole_media' },
-            { name: 'twitter:image', content: 'http://www.otoole.media/images/preview.png' },
+            { name: 'twitter:title', content: 'lanterns' },
+            { name: 'twitter:image', content: 'http://www.otoole.media/images/lanterns-preview.jpg' },
 
-            { property: 'og:title', content: 'otoole_media' },
+            { property: 'og:title', content: 'lanterns' },
             { property: 'og:site_name', content: 'otoole.media' },
             { property: 'og:type', content: 'website' },
             { property: 'og:url', content: 'http://www.otoole.media/lanterns/' },
-            { property: 'og:description', content: 'otoole.media' },
-            { property: 'og:image', content: 'http://www.otoole.media/images/preview.png' },
+            { property: 'og:description', content: 'three js sketch' },
+            { property: 'og:image', content: 'http://www.otoole.media/images/lanterns-preview.jpg' },
             { property: 'og:site_name', content: 'otoole media' },
           ]}
         />
