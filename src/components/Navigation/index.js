@@ -30,7 +30,7 @@ export default () => {
         </div>
       </div>
       <div className='navLinks'>
-        <a href="mailto:terry@otoole.media" className='mailLink'>@</a>
+        <a href="mailto:otooleterrence@gmail.com" className='mailLink'>@</a>
         <OutboundLink
           eventLabel={`Outbound Link to github`}
           to="https://github.com/otooleterrence"
