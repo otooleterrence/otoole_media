@@ -1,0 +1,21 @@
+@import 'theme/colors.scss';
+@import 'theme/spacing.scss';
+
+.header {
+  color: white;
+  opacity: .1;
+  width: max-content;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 53px;
+  transition: opacity .3s ease-out;
+  &:hover{
+    opacity: 1;
+    transition: opacity .3s ease-out;
+  }
+}
+
+.iframeContainer{
+  height: 100vh;
+}

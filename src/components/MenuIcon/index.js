@@ -5,8 +5,8 @@ import './styles.css';
 export default () => {
   return (
     <header className='header'>
-      <Link to="/">
-        <h1>otoole.media</h1>
+      <Link to="/" title="otoole media">
+        <h1>o</h1>
       </Link>
     </header>
   );
