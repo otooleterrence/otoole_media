@@ -17,6 +17,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: $near-black;
+  overflow: hidden
 }
 
 h1 {
@@ -27,8 +28,8 @@ h1 {
     color: $white;
     letter-spacing: 5px;
   // }
-  @include breakpoint(mobile){
-    font-size: 44px;
+  @include breakpoint(mobileOnly){
+    font-size: 32px;
     font-weight: 800;
     margin: 0px;
     color: $white;

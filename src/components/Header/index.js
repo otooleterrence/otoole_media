@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-export default () => {
+const Header = () => {
   return (
-    <header className='header'>
-      <Link to="/">
-        <h1>otoole.media</h1>
-      </Link>
-    </header>
+    <Link to="/" className='header'>
+      <h1>otoole.media</h1>
+    </Link>
   );
 };
+
+export default Header;

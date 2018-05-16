@@ -4,7 +4,7 @@ import './styles.css';
 
 export default () => {
   return (
-    <header className='header'>
+    <header className="headerIcon">
       <Link to="/" title="otoole media">
         <h1>o</h1>
       </Link>
