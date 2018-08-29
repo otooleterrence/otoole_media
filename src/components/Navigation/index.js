@@ -2,16 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { OutboundLink } from 'react-ga';
 import * as projects from 'config/utils';
-import icons from 'media/icons';
+import Header from 'components/Header';
+import ExternalLinks from 'components/ExternalLinks';
 import './styles.css';
 
-export default () => {
+const Navigation = () => {
   return (
     <nav className='navList'>
       <div className='topSection'>
-        <Link to="/">
-          <h1>otoole.media</h1>
-        </Link>
+        <Header />
         <div className='links'>
           {projects.getTypes().map(type => {
             return (
@@ -27,32 +26,25 @@ export default () => {
               </div>
             )
           })}
+          <div>
+            <h2>Talks</h2>
+            <OutboundLink
+              eventLabel={`Outbound Link to Essential Three js`}
+              to='https://www.youtube.com/watch?v=O18Dq-QcfEE'
+              target="_blank"
+              className='navEntry'
+            >
+              <div className='linkRow'>
+              Essential Three js
+              </div>
+            </OutboundLink>
+          </div>
         </div>
       </div>
-      <div className='navLinks'>
-        <a href="mailto:otooleterrence@gmail.com" className='mailLink'>@</a>
-        <OutboundLink
-          eventLabel={`Outbound Link to github`}
-          to="https://github.com/otooleterrence"
-          target="_blank"
-        >
-          <img src={icons.github} className='image' alt='to github' />
-        </OutboundLink>
-        <OutboundLink
-          eventLabel={`Outbound Link to github`}
-          to="https://www.linkedin.com/in/otooleterrence"
-          target="_blank"
-        >
-          <img src={icons.linkedin} className='image' alt='to linkedin' />
-        </OutboundLink>
-        <OutboundLink
-          eventLabel={`Outbound Link to github`}
-          to="https://twitter.com/pterryodactyl"
-          target="_blank"
-        >
-          <img src={icons.twitter} className='image' alt='to twitter' />
-        </OutboundLink>
-      </div>
+
+      <ExternalLinks />
     </nav>
   );
 };
+
+export default Navigation;

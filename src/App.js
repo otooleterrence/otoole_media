@@ -3,6 +3,7 @@ import { Router, Route, Redirect, Switch } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import createHistory from 'history/createBrowserHistory';
 import homeContainer from 'containers/homeContainer';
+import ExtremeTelepathy from 'containers/ExtremeTelepathy';
 import blackout from 'containers/blackout';
 import lanterns from 'containers/lanterns';
 import { gaId } from 'config';
@@ -31,6 +32,7 @@ class App extends Component {
       <Router history={history}>
         <Switch>
           <Route exact path="/" component={homeContainer} />
+          <Route exact path="/extremetelepathy" component={ExtremeTelepathy} />
           <Route exact path="/home" component={homeContainer} />
           <Route exact path="/coming-soon" component={homeContainer} />
           <Route exact path="/blackout" component={blackout} />

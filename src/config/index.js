@@ -1,7 +1,7 @@
 export const gaId = 'UA-114600202-1';
 
 export const typeMap = {
-  // feature: 'Features',
+  feature: 'Features',
   interactive: 'Interactives',
   // still: 'Stills',
   // other: 'Others'
@@ -25,6 +25,12 @@ export const contentList = [
     id: 'lanterns',
     url: '/lanterns',
     type: typeMap.interactive,
+  },
+  {
+    title: 'extreme telepathy',
+    id: 'ext-tp',
+    url: '/extremetelepathy',
+    type: typeMap.feature,
   },
   // {
   //   title: 'wright window',

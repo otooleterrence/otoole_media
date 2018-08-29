@@ -12,10 +12,12 @@ class comingSoonContainer extends Component {
       animationData: animationData,
       rendererSettings: {},
     };
+    const width = window.innerWidth;
+    const isDesktop = width >=450;
 
     return (
       <div className='contentBox'>
-        <Lottie options = { defaultOptions } />
+        {isDesktop && <Lottie options = { defaultOptions } />}
       </div>
     );
   }

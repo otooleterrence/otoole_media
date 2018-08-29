@@ -16,3 +16,5 @@ export const getTypes = () => {
     return undefined;
   });
 }
+
+export const isDesktop = () => window.innerWidth >= 450;

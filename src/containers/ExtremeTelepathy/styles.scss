@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400');
+@import 'theme/spacing.scss';
+
+/*********************
+BREAKPOINTS
+*********************/
+.categories {
+  display: flex; }
+
+.white {
+  background-color: #FFFFFF;
+  transition: background-color 300ms ease-out; }
+
+.telepathyContainer {
+  align-items: center;
+  background: linear-gradient(to bottom right, #00e9a2 30%, #00a7aa 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  width: 100%;
+  & h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+    text-transform: lowercase;
+    text-align: center;
+    @include breakpoint(mobileOnly){
+      font-size: 32px;
+      font-weight: 300;
+      letter-spacing: 5px;
+    }
+  }
+  & h2{
+    color: #f6f6f6;
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: lowercase;
+    @include breakpoint(mobileOnly){
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 5px;
+    }
+  }
+  & a{
+    color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    font-size: 24px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+    &:hover{
+      background-color: #f6f6f6;
+      color: #00e9a2;
+    }
+  }
+  > div{
+    align-items: center;
+    display: flex;
+    flex-direction: inherit;
+  }
+}
+

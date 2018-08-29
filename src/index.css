@@ -11,10 +11,11 @@ BREAKPOINTS
   box-sizing: border-box; }
 
 body {
-  font-family: 'proxima-nova', 'Open Sans';
+  font-family: 'proxima-nova', 'Open Sans', sans-serif;
   padding: 0px;
   margin: 0px;
-  background-color: #181818; }
+  background-color: #181818;
+  overflow: hidden; }
 
 h1 {
   font-size: 44px;
@@ -23,9 +24,9 @@ h1 {
   text-transform: uppercase;
   color: #FFFFFF;
   letter-spacing: 5px; }
-  @media (min-width: 450px) {
+  @media (max-width: 450px) {
     h1 {
-      font-size: 44px;
+      font-size: 32px;
       font-weight: 800;
       margin: 0px;
       color: #FFFFFF;
